@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="css/styleJuego.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            
+            <nav class="nav-contenedor">
+
+                
+                <div class="menu-desplegable">
+                    <div class="btn-menu">
+                        <img class="img-hamburguesa" src="imgA/menu.png" alt="menuHamburguesa">
+                    </div>
+
+                    <div class="menu">
+                        <ul class="navegacion">
+                            <li>Inicio</li>
+                            <li>Juegos gratis</li>
+                            <li>Juegos destacados</li>
+                            <li>Ofertas</li>
+                            <li>Nuevos</li>
+                            <li>Mis juegos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-------------------------------------------------------------------------->
+                <div class="logo-contenedor">
+                    <a href="home.html">
+                    
+                    <img class="img-logo" src="imgA/logo-claro.png" alt="logo"></a></div> 
+                <div class="Breadcrumbs"></div> 
+
+
+
+
+                     
+        <div class="contenedor-buscar">
+            <div class="buscar">
+            <input type="text" class="input-buscar" placeholder="Buscar">
+                <img  src="img/iconoBuscar.png" alt="iconoBuscar" id="icono-buscar">
+            </div>
+        </div>
+
+            <div class="usuario-contenedor">
+                <a href="index.html">
+                <img src="img/imagenUsuario.png" alt="imagenUsuario" id="imagen-usuario"></a>
+            </div> 
+            </nav>
+
+       
+           
+        </header>
+
+
+
+    <div class="fila fila-80">
+        <!-- Contenido de la fila 2 -->
+        <div class="breadcrumbs">
+            <a href="#">Inicio</a>
+            <span> &gt; </span>
+            <a href="#">Juegos gratis</a>
+            <span> &gt; </span>
+            <a href="#">Cuatro en Linea</a>
+            <span> &gt; </span>
+            
+        </div>
+    </div>
+
+    <div class="contenedor">
+
+
+
+        <div class="juego-contenedor"> 
+            <div class="juego">
+                <div class="inicio">
+                    <div class="paso-1">
+                        <h1>4-en-linea</h1>
+                        <button>Jugar</button>
+                    </div>
+                    <div class="paso-2">
+                        <h1>Modo de juego</h1>
+                        <div class="container-modos">
+                            <div id="4" class="card-modo">4 en linea</div>
+                            <div id="5" class="card-modo">5 en linea</div>
+                            <div id="6" class="card-modo">6 en linea</div>
+                        </div>
+                    </div>
+                    <div class="paso-3">
+                        <h1>Elige la ficha del jugador 1</h1>
+                        <div class="container-fichas">
+                            <div class="grupo-ficha grupo-1">
+                                <img class="ficha" style="border: 1px solid blue;" src="img/avengers/capitan-america.webp"/>
+                                <img class="ficha" style="border: 1px solid red;" src="img/avengers/iron-man.webp"/>
+                                <img class="ficha" style="border: 1px solid green;" src="img/avengers/hulk.jpg"/>
+                                <img class="ficha" style="border: 1px solid yellow;" src="img/avengers/thor.jpeg"/>
+                            </div>
+                          
+                            <div class="grupo-ficha grupo-2">
+                                <img class="ficha" style="border: 1px solid blue;" src="img/avengers/capitan-america.webp"/>
+                                <img class="ficha" style="border: 1px solid red;" src="img/avengers/iron-man.webp"/>
+                                <img class="ficha" style="border: 1px solid green;" src="img/avengers/hulk.jpg"/>
+                                <img class="ficha" style="border: 1px solid yellow;" src="img/avengers/thor.jpeg"/>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="paso-4"></div>
+                </div>
+                <div class="container-timer">
+                    <div class="timer"></div>
+                  </div>
+                <img id="backgroundImage" src="img/avengers/background.jpg" style="display: none;">
+                <div class="win">
+                    <h1></h1>  
+                    <button>Volver a jugar</button>
+                </div>
+                <canvas id="canvas" width="500px" height="500px"></canvas>
+            </div>
+
+         
+        </div>
+        <div class="descripcion-juego">
+            <p>
+                El juego Cuatro en linea Avengers es una versión del clásico juego de mesa de estrategia y habilidad, pero con un toque de la saga de pelicula de Avengers. El objetivo del juego es ser el primero en alinear cuatro fichas en línea, ya sea horizontal, vertical o diagonalmente. El juego incluye un tablero de juego. El juego es para dos jugadores.
+            </p>
+        </div>
+
+        <div class="galeria-juego">
+            <h2>Galeria de imagenes</h2>
+            <div class="container-imgs">
+                <img src="img/avengers/captura1-4-en-raya.png" />
+                <img src="img/avengers/captura2-4-en-raya.png" />
+                <img src="img/avengers/captura3-4-en-raya.png" />
+            </div>
+        </div>
+        <div class="comentarios-instrucciones-videos">
+        <div class="comentarios">
+        <h3>Deja un comentario</h3>
+        <div class="comentario">
+            <img class="imagen-usuario" src="img/imagenUsuario.png" alt="imagenUsuario">
+            <p>Tu comentario...</p>
+        </div>
+        <button class="btn-comentario">Publicar comentario</button>
+
+        <h3>Otros jugadores comentaron esto...</h3>
+        <div class="comentario">
+            <img class="imagen-usuario" src="img/imagenUsuario.png" alt="imagenUsuario">
+            <div>
+            <p>Analia Burgos</p>
+            <p>Me gusto mucho el juego</p>
+            <p>06/07/2023</p>
+            </div>
+            <div class="cont-estrellas">
+                <img src="img/estrellaVerde.png" alt="Estrella">
+                <img src="img/estrellaVerde.png" alt="Estrella">
+                <img src="img/estrellaVerde.png" alt="Estrella">
+                <img src="imgA/estrella.png" alt="Estrella">
+                <img src="imgA/estrella.png" alt="Estrella">
+            </div>
+        </div>
+
+        <div class="comentario">
+            <img class="imagen-usuario" src="img/imagenUsuario.png" alt="imagenUsuario">
+            <div>
+                <p>Gianluca Ceschinelli</p>
+                <p>Me gusto mucho el juego</p>
+                <p>15/07/2023</p>
+                </div>
+                <div class="cont-estrellas">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="imgA/estrella.png" alt="Estrella">
+                    <img src="imgA/estrella.png" alt="Estrella">
+                </div>
+        </div>
+
+        <div class="comentario">
+            <img class="imagen-usuario" src="img/imagenUsuario.png" alt="imagenUsuario">
+            <div>
+                <p>Marcela Perez</p>
+                <p>Me gusto mucho el juego</p>
+                <p>11/09/2023</p>
+                </div>
+                <div class="cont-estrellas">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="imgA/estrella.png" alt="Estrella">
+                    <img src="imgA/estrella.png" alt="Estrella">
+                </div>
+        </div>
+
+        <div class="comentario">
+            <img class="imagen-usuario" src="img/imagenUsuario.png" alt="imagenUsuario">
+            <div>
+                <p>Luis Lopez</p>
+                <p>Me gusto mucho el juego</p>
+                <p>1/04/2023</p>
+                </div>
+                <div class="cont-estrellas">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                    <img src="img/estrellaVerde.png" alt="Estrella">
+                </div>
+
+                
+        </div>
+        <div class="columna-link">
+            <div>
+            <a class="link-juego" href="#">Como jugar con otros en linea</a>
+            </div>
+            <div>
+            <a class="link-juego" href="#">Aprende como jugar mejor</a>
+            </div>
+          </div>
+
+        </div>
+        <section class="seccion-derecha">
+            
+        <div class="instrucciones">
+            <h3>Instrucciones del juego:</h3>
+            <p>1. Elige el personaje.</p>
+            <p>2. Aprieta jugar.</p>
+            <p>3. Escoje la columna donde dejar caer tu ficha.</p>
+            <p>4. Intenta bloquear a tu oponente.</p>
+            <p>5. Intenta alinear 4 fichas en forma horizonal o vertical.</p>
+            <h3>Diviertete!!</h3>
+        </div>
+
+        
+        <div class="videos">
+            <h1>Trucos y consejos</h1>
+            <div>
+                <img src="imgA/video1.jpg" alt="video1" class="imagen-videos">
+            </div>
+            <div>
+                <img src="imgA/video2.jpg" alt="video2" class="imagen-videos">
+            </div>
+            <div>
+                <img src="imgA/video3.png" alt="video3" class="imagen-videos">
+            </div>
+            <div class="columna-link">
+                <a class="link-juego" href="#">Ganale a la computadora en el 4 en linea</a>
+                <a class="link-juego" href="#">Diviertete con amigos con los juegos on-line
+              </a>
+              </div>
+        </div>
+
+        </section>
+    </div>
+    </div> 
+    <!-----------------------------footer------------------------------->
+    <footer class="fat-footer">
+        <div class="columna">
+    
+             <h3 class="blanca">Nosotros</h3>
+    
+             <p>En Game Pro, estamos dedicados a brindarte la mejor experiencia de juego en línea. Con una amplia selección de juegos emocionantes, estamos seguros de que encontrarás algo que te encante.  ¡Gracias por ser parte de nuestra comunidad de jugadores!</p>
+             <h3 class="blanca">Promociones</h3>
+            <p >¿Querés ser el primero en enterarte de nuestros descuentos y promociones? </p>
+           
+            
+            <p>Escribinos en Facebook o Instagram. </p>
+    
+             <div class="redes">
+              
+    
+               <div class="iconos">
+    
+                 <img src="imgA/facebook.png">
+                  <img src="imgA/ins.png">
+    
+    
+                     </div>
+                           </div>
+        
+                                   </div>
+    
+    
+    
+    
+    
+            
+        <div class="columna">
+    
+            <div class="categorias">
+            
+                <ul>
+    
+           <li><h3 class="blanca">Categorias</h3></li> 
+    
+            <li>Accion</li>
+            <li>Deporte</li>
+            <li>Aventura</li>
+            <li>Carreras</li>
+            <li>Cartas</li>
+            <li>Puzzle</li>
+            <li>Multijugador</li>
+            <li>Terror</li>
+            <li>Disparos</li>
+            <li>Motos</li>
+           
+    
+        </ul>
+    
+                            </div>
+    
+        </div>
+    
+    
+    
+        <div class="columna">
+    
+            <div class="terminos">
+            <ul>
+               
+    
+            <li><h3 class="blanca">Link de interes</h3></li>
+            <div class="links">
+                
+                <li><a href="https://www.youtube.com/gaming" target="_blank">YouTube Gaming</a></li>
+                <li><a href="https://www.steamcommunity.com/" target="_blank">Steam Community</a></li>
+                <li><a href="https://www.ign.com/" target="_blank">IGN</a></li>
+                <li><a href="https://www.gamespot.com/" target="_blank">GameSpot</a></li>
+                <li><a href="https://www.polygon.com/" target="_blank">Polygon</a></li>
+                <li><a href="https://www.playstation.com/" target="_blank">PlayStation</a></li>
+                <li><a href="https://www.xbox.com/" target="_blank">Xbox</a></li>
+            </div>
+            <li>Terminos de uso</li>
+            <li>Gestionar preferencias</li>
+            <li>Politica de privacidad</li>
+            <li>Informacion de marcas registradas</li>
+            </ul>
+            
+            
+        </ul>
+    
+        </div>
+    
+        </div>
+    
+    </footer>
+    
+    <div class="derechos-reservados">
+        <div class="pie">
+    
+        <p class="negrita">Game Pro. Todos los derechos reservados. 2023</p>
+       </div>
+    </div>
+    <script src="js/4-en-linea/Timer.js"></script>
+    <script src="js/4-en-linea/Player.js"></script>
+    <script src="js/4-en-linea/Figure.js"></script>
+    <script src="js/4-en-linea/Board.js"></script>
+    <script src="js/4-en-linea/Game.js"></script>
+    <script src="js/4-en-linea/main.js"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <div class="contenedor_3d">
+          <div class="form">
+            <div class="form_logo">
+              <div class="logo-container">
+                <a href="home.html">
+                  <img
+                    id="logo"
+                    src="imgA/logo-claro.png"
+                    class="img"
+                    alt="Logo" />
+                </a>
+              </div>
+            </div>
+            <form class="form">
+              <div class="form_button">
+                <button class="facebook-button">
+                  <i class="fab fa-facebook"></i>
+                  <a href="loading.html"> Regístrate con Facebook</a>
+                </button>
+                <button class="google-button">
+                  <i class="fab fa-google"></i>
+                  <a href="loading.html"> Regístrate con Google</a>
+                </button>
+              </div>
+              <div class="form_inputs">
+                <label for="nombre"
+                  ><p class="etiq">Nombre y apellido *</p></label
+                >
+                <input
+                  type="text"
+                  placeholder="Escribe tu nombre y apellido completo"
+                  required />
+              </div>
+              <div class="form_inputs">
+                <label for="nickname"><p class="etiq">Nickname:</p></label>
+                <input
+                  type="text"
+                  placeholder="Escribe aquí un nombre opcional para identificarte en el juego" />
+              </div>
+              <div class="form_inputs_linea">
+                <label for="edad"><p class="etiq">Edad *</p></label>
+                <input type="number" placeholder="Edad" required />
+              </div>
+              <div class="form_inputs_linea">
+                <label for="Direccion"
+                  ><p class="etiq etq">
+                    Dirección de correo electrónico *
+                  </p></label
+                >
+                <input
+                  type="email"
+                  placeholder="Escribe aquí tu dirección de correo electrónico"
+                  required />
+              </div>
+              <div class="form_inputs">
+                <label for="Contrasena"
+                  ><p class="etiq etq">Contraseña *</p></label
+                >
+                <input
+                  type="password"
+                  placeholder="Escribe aquí una contraseña de más de 8 caracteres"
+                  required />
+              </div>
+              <div class="form_inputs">
+                <label for="Contrasena"
+                  ><p class="etiq etq">Reingresa la contraseña *</p></label
+                >
+                <input
+                  type="password"
+                  placeholder="Reingresa tu contraseña"
+                  required />
+              </div>
+              <div class="contenedor">
+                <div class="cuadro">
+                  <input type="checkbox" id="miCheckbox" required />
+                </div>
+                <div class="recaptcha">
+                  <p>No soy un robot</p>
+                  <img src="imgA/recapcha.png" alt="Imagen" />
+                </div>
+              </div>
+              <div id="overlay"></div>
+
+              <div id="messageContainer"></div>
+
+              <div class="form_button">
+                <button
+                  id="submitButton"
+                  class="button btn bt efectos"
+                  type="button">
+                  <h3>Registrarse</h3>
+                </button>
+              </div>
+              <!--para el registro-->
+              <div id="overlay" style="display:none;">
+                <div id="messageContainer">
+                    <img id="okHandImage" src="imgA/logo-claro.png" alt="OK" style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); opacity:0;">
+                    <p>excelente! ya puedes ingresar!</p>
+                </div>
+            </div>
+            
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fat-footer">
+      <div class="columna">
+        <h3 class="blanca">Nosotros</h3>
+        <p>
+          En Game Pro, estamos dedicados a brindarte la mejor experiencia de
+          juego en línea. Con una amplia selección de juegos emocionantes,
+          estamos seguros de que encontrarás algo que te encante. ¡Gracias por
+          ser parte de nuestra comunidad de jugadores!
+        </p>
+        <h3 class="blanca">Promociones</h3>
+        <p>
+          ¿Querés ser el primero en enterarte de nuestros descuentos y
+          promociones?
+        </p>
+        <p>Escribinos en Facebook o Instagram.</p>
+        <div class="redes">
+          <div class="iconos">
+            <img src="imgA/facebook.png" alt="Facebook" />
+            <img src="imgA/ins.png" alt="Instagram" />
+          </div>
+        </div>
+      </div>
+      <div class="columna">
+        <div class="categorias">
+          <ul>
+            <li><h3 class="blanca">Categorias</h3></li>
+            <li>Accion</li>
+            <li>Deporte</li>
+            <li>Aventura</li>
+            <li>Carreras</li>
+            <li>Cartas</li>
+            <li>Puzzle</li>
+            <li>Multijugador</li>
+            <li>Terror</li>
+            <li>Disparos</li>
+            <li>Motos</li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="columna">
+        <div class="terminos">
+          <ul>
+            <li><h3 class="blanca">Link de interés</h3></li>
+            <div class="links">
+              
+              <li>
+                <a href="https://www.youtube.com/gaming" target="_blank"
+                  >YouTube Gaming</a
+                >
+              </li>
+              <li>
+                <a href="https://www.steamcommunity.com/" target="_blank"
+                  >Steam Community</a
+                >
+              </li>
+              <li><a href="https://www.ign.com/" target="_blank">IGN</a></li>
+              <li>
+                <a href="https://www.gamespot.com/" target="_blank">GameSpot</a>
+              </li>
+              <li>
+                <a href="https://www.polygon.com/" target="_blank">Polygon</a>
+              </li>
+              <li>
+                <a href="https://www.playstation.com/" target="_blank"
+                  >PlayStation</a
+                >
+              </li>
+              <li>
+                <a href="https://www.xbox.com/" target="_blank">Xbox</a>
+              </li>
+            </div>
+            <li>Terminos de uso</li>
+            <li>Gestionar preferencias</li>
+            <li>Política de privacidad</li>
+            <li>Información de marcas registradas</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="derechos-reservados">
+      <div class="pie">
+        <p class="negrita">Game Pro. Todos los derechos reservados. 2024</p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

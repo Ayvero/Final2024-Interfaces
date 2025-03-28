@@ -1,6 +1,7 @@
 ![image](https://github.com/Ayvero/Final2024-Interfaces/assets/112092368/dc40174a-7222-4987-8a8b-0f858e258d30)
 
 # Tienda de Juegos Interactiva con Animaciones CSS
+#Ver la pagina en vivo: https://ayvero.github.io/Final2024-Interfaces/
 
 ## Descripción
 Este proyecto es una tienda interactiva de juegos construida con HTML, CSS y JavaScript. Incluye una página de inicio de sesión, un cargador personalizado y una página de compras completamente funcional donde los usuarios pueden explorar productos de juegos. Las animaciones están implementadas con CSS y JavaScript para mejorar la experiencia del usuario y hacer la interfaz más atractiva.
